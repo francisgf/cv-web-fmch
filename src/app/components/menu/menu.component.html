@@ -1,0 +1,12 @@
+<header>
+    <img (click)="toggleList()" *ngIf="isViewBtnMenu" src="assets/menu.svg" alt="">
+    <img (click)="toggleList()" *ngIf="isViewBtnMenuClose" src="assets/close-menu.svg" alt="">
+    <nav [ngClass]="{'open': isListOpen}" class="animated-list" > 
+        <ul>
+        <li (click)="navigateHome()">Home</li>
+        <li >habilidades</li>
+        <a target="_blank" (click)="navigateBlog()" ><li>Blog</li></a>
+        <li (click)="navigateContact()">Contactos</li>
+    </ul>
+</nav>
+</header> 

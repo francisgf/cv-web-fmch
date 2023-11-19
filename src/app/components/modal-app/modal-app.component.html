@@ -1,0 +1,40 @@
+<div class="overlay">
+    <div class="modal-container">
+        <div id="div-header">
+            <button (click)="closeModal()" class="button">
+                <span class="X"></span>
+                <span class="Y"></span>
+                <div class="close">Close</div>
+              </button>
+        </div>
+      <h2>{{appTitle}}</h2>
+      <span class="icons-tech">
+        <i class="devicon-java-plain"></i>  
+        <i class="devicon-javascript-plain"></i> 
+        <i class="devicon-css3-plain i-css"></i>
+        <i class="devicon-html5-plain i-html"></i>
+        <i class="devicon-angularjs-plain i-angular"></i>
+        <i class="devicon-spring-plain i-spring"></i>
+        </span>
+
+      <ul>
+        <li *ngFor="let item of appDataHabilities"><i class="bi bi-record-fill"></i>
+          {{ item }} 
+        </li>
+      </ul>
+
+
+        
+   <div id="container-table">
+      <table class="table">
+        <thead>
+        
+        </thead>
+        <tbody>
+          <tr >   
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+  </div>

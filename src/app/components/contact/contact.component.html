@@ -1,0 +1,29 @@
+
+<div id="contact-container">
+ <main>
+    <div id="contact-form">
+       <input class="input" type="text" placeholder="Nombres" [(ngModel)]="name" (keyup)="onKeyUp($event)" required>
+       <input class="input" type="email" placeholder="e-mail" [(ngModel)]="email" (keyup)="onKeyUp($event)"  required>
+       <textarea placeholder="Mensaje" [(ngModel)]="messaje" (keyup)="onKeyUp($event)" ></textarea>
+       <button [disabled]="isDisabledBtn" (click)="sendEmail();"  >Enviar</button>
+  <p id="messaje" [ngClass]="{'success-style': isActiveClass, 'error-style': !isActiveClass}" *ngIf="isVireMessaje">{{uiMessage}} <i class="bi bi-emoji-smile"></i></p>
+       <div id="container-loader" *ngIf="isViewLoader">
+            <div class="loader">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+         <div class="bar4"></div>
+         <div class="bar5"></div>
+         <div class="bar6"></div>
+         <div class="bar7"></div>
+         <div class="bar8"></div>
+         <div class="bar9"></div>
+         <div class="bar10"></div>
+         <div class="bar11"></div>
+         <div class="bar12"></div>
+     </div>
+       </div>
+    
+    </div>
+ </main>   
+</div>

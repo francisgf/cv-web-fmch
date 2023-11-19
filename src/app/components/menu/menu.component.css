@@ -1,0 +1,77 @@
+*,
+html {
+  margin: 0;
+  border: 0;
+}
+header {
+  width: 100%;
+  height: auto;
+  background-color: rgb(255 255 255);
+  box-shadow: 0 2px 20px 19px #0f19363b;
+
+}
+
+header img {
+  display: none;
+}
+nav {
+  width: 100%;
+}
+
+nav ul {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin: 0px;
+  padding: 20px;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+nav li:hover {
+  background-color: rgb(28, 128, 221);
+  color: aliceblue;
+}
+
+a {
+   text-decoration: none; /* Elimina la subrayado del enlace */
+   color: inherit; /* Hereda el color del texto del elemento padre */
+ }
+ 
+
+@media (width < 500px) {
+  header {
+    position: fixed;
+  }
+  header img {
+    display: block;
+    padding: 5px;
+  }
+  nav li {
+    display: block;
+    text-align: initial;
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(44, 44, 44);
+  }
+  nav {
+  }
+  
+  .animated-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .open {
+    max-height: 500px;
+  }
+}

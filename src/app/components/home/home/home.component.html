@@ -1,0 +1,198 @@
+<div id="home-container">
+  <div id="detail-container">
+    <div id="social-container">
+      <a href="https://pe.linkedin.com/in/francis-mendoza-chavez-64a62120a" target="_blank"><i
+          class="bi bi-linkedin"></i>
+      </a>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-facebook"></i>
+    </div>
+    <div id="avatar-container">
+      <img src="/assets/my-avatar.png" alt="Francis Mendoza Chavez" />
+    </div>
+    <div id="description-container">
+      <div id="name-datail">
+        <span id="hello"> ¡Hola! soy</span>
+        <span id="name">Francis Mendoza</span>
+        <span id="working">Soy desarrollador de Software</span>
+        <div id="btns-detail">
+          <button id="btn-1" (click)="openModalMi()">Sobre mi</button>
+          <button id="btn-2" (click)="navigateContact()">Contactar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main id="detail-work-container">
+    <article id="expiriens-container">
+      <div class="expiriens-detail">
+        <div id="parrafo">
+          <h2 class="title-expiriens">
+            <i class="bi bi-briefcase-fill icon-bag"></i>Experiencia Laboral
+          </h2>
+          <div class="info-work" [ngClass]="isSetOpacity ? 'setOpacity' : ''">
+            <div id="container-detail-work">
+            <div class="title-company">
+                <i class="bi bi-building icon"></i>
+                <p class="title">{{nameCompany}}</p>
+              </div>
+             <!--   <div class="title-work">
+                <i class="bi bi-person-workspace icon"></i>
+                <p class="title">{{position}}</p>
+              </div>-->
+              <div class="title-work">
+                <i class="bi bi-calendar-week"></i>
+                <p class="title">{{DateLocation}}</p>
+              </div>
+            </div>
+          <!--  <p id="resume-work" [innerHTML]="stExperience"></p>-->
+            <ul>
+              <li *ngFor="let item of experienceArray"><i class="bi bi-record-fill"></i>
+                {{ item }} 
+              </li>
+            </ul>
+      
+          </div>
+          <div id="btns-container">
+            <button class="btn-next-back" *ngIf="isViewBtnPositive" (click)="changeItemExpiriens()">
+              <i class="bi bi-arrow-right-short"></i>
+            </button>
+            <button class="btn-next-back" *ngIf="isViewBtnNegative" (click)="changeItemExpiriensNegative()">
+              <i class="bi bi-arrow-left-short"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="expiriens-detail">
+        <h2 class="title-expiriens">
+          <i class="bi bi-code-slash"></i>Habilidades
+        </h2>
+        <div class="info-work" [ngClass]="isSetOpacity ? 'setOpacity' : ''">
+          <div class="title-work">
+            <i class="bi bi-building"></i>
+            <p class="title"></p>
+          </div>
+          <p [innerHTML]="stSkills"></p>
+        </div>
+        <div id="btns-container">
+          <button class="btn-next-back" *ngIf="isViewBtnPositive" (click)="changeItemExpiriens()">
+            <i class="bi bi-arrow-right-short"></i>
+          </button>
+          <button class="btn-next-back" *ngIf="isViewBtnNegative" (click)="changeItemExpiriensNegative()">
+            <i class="bi bi-arrow-left-short"></i>
+          </button>
+        </div>
+      </div>
+
+
+    </article>
+    <article id="article-container">
+      <h2 class="title-expiriens">
+        <i class="bi bi-code-slash"></i>Conocimientos
+      </h2>
+      <div id="icons-app-container">
+        <ul class="list-languajes" (click)="openModal(1)">
+          <div class="block-languajes">
+          <li (click)="openModal(1)">
+            <div id="icons-programing-languages">
+              <span>
+                <i class="devicon-java-plain i-java"></i>
+                Java</span>
+            </div>
+          </li>
+          <li>
+            <div id="icons-programing-languages">
+              <span>
+                <i class="devicon-javascript-plain i-js"></i>
+                Java Script</span>
+            </div>
+          </li>
+          <li>
+            <div id="icons-programing-web">
+              <span>
+                <i class="devicon-css3-plain i-css"></i>
+                CSS
+              </span>
+            </div>
+
+          </li>
+          <li>          
+            <div id="icons-programing-web">
+              <span>
+                <i class="devicon-html5-plain i-html"></i>
+                HTML5</span>
+            </div>
+          </li>
+          <li>
+            <div id="icons-programing-web">
+              <span>
+                <i class="devicon-spring-plain i-spring"></i>
+                Spring</span>
+            </div>
+          </li>
+          <li>
+            <div id="icons-programing-web">
+              <span>
+                <i class="devicon-angularjs-plain i-angular"></i>
+                Angular</span>
+            </div>
+          </li>
+        </div>
+        </ul>
+
+          <hr />
+     
+          <ul class="list-languajes" (click)="openModal(2)">
+          <li>
+            <div id="icons-data">
+              <span>
+                <i class="devicon-microsoftsqlserver-plain i-sql"></i>
+                SQL Server</span>
+            </div>
+          </li>
+          <li>
+            <div id="icons-data">
+              <span>
+                <i class="devicon-mysql-plain i-mysql"></i>
+                MySql</span>
+            </div>
+          </li>
+          <hr />
+          <li>
+            <div id="icons-ui-ux">
+              <span>
+                <i class="devicon-photoshop-plain i-photoshop"></i>
+                Photoshop</span>
+            </div>
+          </li>
+          <li>
+            <div id="icons-ui-ux">
+              <span>
+                <i class="devicon-figma-plain i-figma"></i>
+                Figma</span>
+            </div>
+          </li>
+          <hr />
+          <li>
+            <div id="icons-ui-ux">
+              <span>
+                <i class="devicon-wordpress-plain i-wordpress"></i>
+                Word press</span>
+            </div>
+          </li>
+          <hr />
+          <li>
+            <div id="icons-ui-ux">
+              <span>
+                <i class="devicon-jira-plain i-jira"></i>
+                Jiras</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </main>
+</div>
+<app-modal-app *ngIf="modalService.showModal$  | async" [appTitle]="sendTitleForModal" [appDataHabilities]="sedDataHablilities"></app-modal-app> <!--mostrar modal-->
+<app-modal-aboutme *ngIf="modalAboutMe.showModalAboutMe$   | async" [appTitle]="sendTitleAboutMe" [resumeAboutMe]="sendResume"></app-modal-aboutme>
