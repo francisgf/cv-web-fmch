@@ -12,11 +12,18 @@ export class Data {
 
 
  private resumeCoppelArray:String[]=[
- "Colaboré en el desarrollo y mantenimiento de aplicaciones web para el banco Interbank, utilizando tecnologías como Angular, Java y base de datos SQL Server.",
- "Participé en el análisis de requisitos y diseño de soluciones técnicas para proyectos de desarrollo de software.",
- "Desarrollé y probé funcionalidades clave de aplicaciones web, asegurando su correcto funcionamiento y cumplimiento de los estándares de calidad.",
- "Trabajé en estrecha colaboración con equipos multidisciplinarios, incluyendo diseñadores, analistas de negocio y otros desarrolladores, para garantizar la entrega exitosa de proyectos."
+ "Como desarrollador fullstack, lideré proyectos que abarcaban tanto el backend como el frontend de la plataforma de comercio electrónico de Coppel. Utilicé tecnologías avanzadas, incluyendo Java, Spring, jQuery, Ajax y DB2, para implementar soluciones personalizadas que mejoraron la funcionalidad y la experiencia del usuario.",
+ "Realicé pruebas exhaustivas de las APIs utilizando herramientas como Postman y SoapUI. Esto no solo garantizó la confiabilidad de las interfaces de programación de aplicaciones, sino que también contribuyó a la detección y resolución temprana de posibles problemas.",
+ "Formé parte activa de un equipo de desarrollo ágil Scrum, participando en reuniones diarias, retrospectivas y planificación de sprints. Esta metodología ágil permitió entregas incrementales y adaptabilidad a los requisitos cambiantes.",
   ]
+
+
+  private resumeInterbankArray:String[]=[
+    "Colaboré en el desarrollo y mantenimiento de aplicaciones web para el banco Interbank, utilizando tecnologías como Angular, Java y base de datos SQL Server.",
+    "Participé en el análisis de requisitos y diseño de soluciones técnicas para proyectos de desarrollo de software.",
+    "Desarrollé y probé funcionalidades clave de aplicaciones web, asegurando su correcto funcionamiento y cumplimiento de los estándares de calidad.",
+    "Trabajé en estrecha colaboración con equipos multidisciplinarios, incluyendo diseñadores, analistas de negocio y otros desarrolladores, para garantizar la entrega exitosa de proyectos."
+     ]
 
   public objCoopel: any = {
     name: 'Coopel México',
@@ -31,6 +38,7 @@ export class Data {
     DateLocation: '2022-2023',
     position: 'Software Developer',
     detail: this.dataInterbank,
+    resumeArray:this.resumeInterbankArray
   };
 
   public objCencosud: any = {

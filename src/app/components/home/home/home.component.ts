@@ -87,7 +87,7 @@ export class HomeComponent {
       this.position = this.dataStatic.objInterbank.position;
       this.DateLocation = this.dataStatic.objInterbank.DateLocation;
       this.stExperience = this.dataStatic.objInterbank.detail;
-      this.experienceArray=this.dataStatic.objCoopel.resumeArray;
+      this.experienceArray=this.dataStatic.objInterbank.resumeArray;
 
     } else if (this.countItem == 3) {
       this.nameCompany = this.dataStatic.objCencosud.name;
