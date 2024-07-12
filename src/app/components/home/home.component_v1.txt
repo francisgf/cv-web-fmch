@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Data } from './data';
-import { ModalAppService } from '../../../services/modal-app.service'
+import { ModalAppService } from '../../services/modal-app.service'
 import { ModalAboutMeService } from 'src/app/services/modal-about-me.service';
 import { DataHabilities } from 'src/app/data/data-habilities';
 
@@ -48,7 +48,7 @@ export class HomeComponent {
     this.sendResume= this.dataStatic.resumeAbouMe;
     this.modalAboutMe.openModal();
     this.flecha();
-   
+
   }
 
 

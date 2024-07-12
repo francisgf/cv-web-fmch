@@ -1,0 +1,10 @@
+<main>
+  <span id="title"> <img src="{{companyIcon}}" alt=""><h3> {{companyName}} </h3></span>
+<ul>
+<li *ngFor=" let item of detailArray">
+  {{item}}
+</li>
+</ul>
+<span><i (click)="returnMenu()" class="bi bi-arrow-left">Atrás</i></span>
+</main>
+

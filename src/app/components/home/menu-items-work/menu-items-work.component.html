@@ -1,0 +1,16 @@
+
+<div class="info-work">
+  <ul *ngFor="let item of arrayEmpresas" class="ul-empresa"(click)="sendDataToDetal(item.name);sendFlagWorksToHome();">
+    <li>
+      <img src={{item.icon}} alt="">
+    <li>
+      {{ item.name}}
+    </li>
+    <li>
+      {{ item.rol}}
+    </li>
+    <li>
+      {{ item.date}}
+    </li>
+  </ul>
+</div>

@@ -36,6 +36,11 @@ nav li {
   cursor: pointer;
 }
 
+nav li i{
+  margin: 5px;
+}
+
+
 nav li:hover {
   background-color: rgb(28, 128, 221);
   color: aliceblue;

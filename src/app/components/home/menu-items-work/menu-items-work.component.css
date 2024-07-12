@@ -1,0 +1,39 @@
+.ul-empresa{
+  background: #f7f7f7;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  border-radius: 5px;
+
+}
+.ul-empresa:hover{
+background-color: #f0f6ff;
+cursor: pointer;
+}
+.ul-empresa li img{
+  width: 25px;
+  height: 25px;
+}
+
+.info-work {
+  padding: 10px;
+}
+
+
+.info-work ul li {
+  font-size: 14px;
+  list-style: none;
+  display: inline-flex;
+  margin: 5px 15px;
+}
+
+.info-work ul li i{
+  color: #27436e;
+}
+#container-detail-work {
+  display: flex;
+  align-items: first baseline;
+  justify-content: flex-start;
+  padding: 10px 20px;
+}

@@ -1,0 +1,9 @@
+<div class="info-work">
+  <ul *ngFor="let item of arraySkills" class="ul-skills" (click)="  sendFlagDetailSkills();">
+    <li>
+      <i class="bi bi-file-earmark-code-fill"></i>
+    <li>
+      {{ item.description}}
+    </li>
+  </ul>
+</div>

@@ -192,6 +192,26 @@
   font-size: 18px !important;
 }
 
+.ul-empresa{
+  background: #ebebeb;
+  height: 45px;
+  display: flex;
+justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  border-radius: 5px;
+  list-style: none;
+
+}
+.ul-empresa li{
+
+
+}
+.ul-empresa li img{
+  width: 25px;
+  height: 25px;
+}
+
 .title-work .title {
   width: auto;
   padding: 0px;

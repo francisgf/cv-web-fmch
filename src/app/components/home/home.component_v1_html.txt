@@ -47,10 +47,10 @@
           <!--  <p id="resume-work" [innerHTML]="stExperience"></p>-->
             <ul>
               <li *ngFor="let item of experienceArray"><i class="bi bi-record-fill"></i>
-                {{ item }} 
+                {{ item }}
               </li>
             </ul>
-      
+
           </div>
           <div id="btns-container">
             <button class="btn-next-back" *ngIf="isViewBtnPositive" (click)="changeItemExpiriens()">
@@ -117,7 +117,7 @@
             </div>
 
           </li>
-          <li>          
+          <li>
             <div id="icons-programing-web">
               <span>
                 <i class="devicon-html5-plain i-html"></i>
@@ -142,7 +142,7 @@
         </ul>
 
           <hr />
-     
+
           <ul class="list-languajes" (click)="openModal(2)">
           <li>
             <div id="icons-data">
@@ -194,6 +194,6 @@
     </article>
   </main>
 </div>
-<app-modal-app *ngIf="modalService.showModal$  | async" [appTitle]="sendTitleForModal" [appDataHabilities]="sedDataHablilities"></app-modal-app> <!--mostrar modal-->
-<app-modal-aboutme *ngIf="modalAboutMe.showModalAboutMe$   | async" [appTitle]="sendTitleAboutMe" [resumeAboutMe]="sendResume"></app-modal-aboutme>
+ <app-modal-app *ngIf="modalService.showModal$  | async" [appTitle]="sendTitleForModal" [appDataHabilities]="sedDataHablilities"></app-modal-app>
+<app-modal-aboutme *ngIf="modalAboutMe.showModalAboutMe$   | async" [appTitle]="sendTitleAboutMe" [resumeAboutMe]="sendResume"></app-modal-aboutme> desvomentar
 

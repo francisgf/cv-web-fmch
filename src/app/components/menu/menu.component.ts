@@ -24,11 +24,18 @@ navigateContact(){
   this.toggleList(); 
 }
 
+navigateHobbies(){
+  this.router.navigate(['/hobbies']);
+  this.toggleList(); 
+}
+
 navigateBlog(){
   /*window.location.href = 'http://localhost/miblog/'*/
   window.open('http://localhost/miblog', '_blank');
   this.toggleList();
 }
+
+
 
 toggleList() {
   this.isListOpen = !this.isListOpen;

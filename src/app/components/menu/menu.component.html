@@ -3,10 +3,11 @@
     <img (click)="toggleList()" *ngIf="isViewBtnMenuClose" src="assets/close-menu.svg" alt="">
     <nav [ngClass]="{'open': isListOpen}" class="animated-list" > 
         <ul>
-        <li (click)="navigateHome()">Home</li>
-        <li >habilidades</li>
-        <a target="_blank" (click)="navigateBlog()" ><li>Blog</li></a>
-        <li (click)="navigateContact()">Contactos</li>
+        <li  (click)="navigateHome()"> <i class="bi bi-house-fill"></i>Home</li>
+        <li><i class="bi bi-person-heart"></i> habilidades</li>
+        <li (click)="navigateHobbies()"><i class="bi bi-airplane-fill"></i>hobbies</li>
+        <a target="_blank" (click)="navigateBlog()"><li> <i class="bi bi-globe-americas"></i>Blog</li></a>
+        <li (click)="navigateContact()"><i class="bi bi-envelope-fill"></i>Contactos</li>
     </ul>
 </nav>
 </header> 

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { Component } from '@angular/core';
 import { MailService } from 'src/app/services/mail.service';
 

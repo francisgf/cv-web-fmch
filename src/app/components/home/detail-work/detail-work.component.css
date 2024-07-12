@@ -1,0 +1,39 @@
+main {
+  padding: 10px;
+  margin: 5px;
+}
+
+ul li {
+  font-size: 14px;
+  margin: 10px;
+}
+
+li::marker {
+  font-size: 30px; /* Ajusta el tamaño de la viñeta */
+  color: rgb(52 91 148);      /* Cambia el color de la viñeta si lo deseas */
+}
+
+span {
+  display: flex;
+  justify-content: flex-end;
+}
+
+span i {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+
+}
+
+#title {
+  display: flex;
+  justify-content: start;
+  align-items: self-end;
+  margin-left: 50px;
+}
+
+#title img{
+  width:25px;
+  height:25px;
+  padding: 5px;
+}
