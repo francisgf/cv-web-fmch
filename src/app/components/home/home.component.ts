@@ -80,7 +80,7 @@ export class HomeComponent {
   sendTitleModal(ventana: Number) {
     if (ventana == 1) {
       this.sendTitleForModal = "Tecnologías web";
-      this.sedDataHablilities = this.habilities.fullStack;
+      this.sedDataHablilities = this.habilities.devFullStack;
     }
     if (ventana == 2) {
       this.sendTitleForModal = "Gestore de Bases de datos";

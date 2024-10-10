@@ -1,3 +1,11 @@
 <!--eslint-disable -->
-<p>detail-skills works!</p>
-<span><i (click)="returnMenuSkills()" class="bi bi-arrow-left">Atrás</i></span>
+<main>
+  <span  alt=""><h3> {{objectDetail.name}} </h3></span>
+<ul>
+
+<li *ngFor=" let item of objectDetail.detail">
+  {{item}}
+</li>
+</ul>
+<span><i (click)="returnMenuSkills()" class="bi bi-arrow-left">Atrás</i></span></main>
+

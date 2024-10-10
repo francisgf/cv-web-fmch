@@ -1,7 +1,7 @@
 export class DataHabilities{
 
 
-    public fullStack: string[] = [
+    public devFullStack: string[] = [
         "Desarrollo web con HTML, CSS y JavaScript, JQuery, Angular",
         "Desarrollo backend con Java11, JavaEE y Spring.",
         "Gestión de bases de datos con Oracle, MySQL, SQL Server y MongoDB.",
@@ -16,7 +16,7 @@ export class DataHabilities{
       ];
 
 public getfullStack(){
-    return this.fullStack;
+    return this.devFullStack;
 }
 
 

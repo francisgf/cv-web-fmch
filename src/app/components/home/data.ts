@@ -73,8 +73,8 @@ export class Data {
   ]
 
 
-  private mySkills: any[] = [{ icon: "", description: "Desarrollo de aplicaciones web", detailSkills: this.detailDevWeb },
-                             { icon: "", description: "Desarrollo y administración de bases de datos SQL", detailSkills: this.detailDataBase }
+  private mySkills: any[] = [{ id:"DEVWEB",name: "Desarrollo web", description: "Implementación de aplicaciones web fullstack", detail: this.detailDevWeb },
+                             { id:"DEVDB",name: "Implementación BD", description: "Diseño e implementación de bases de datos SQL", detail: this.detailDataBase }
   ]
 
 
@@ -110,6 +110,18 @@ export class Data {
     position: 'Software Developer',
     detail: this.dataCencosud,
   };
+
+///////////////////////////// MY HABILITIES //////////////////////
+
+
+public webTecnologi =[
+"Desarrollo web con HTML, CSS y JavaScript, JQuery, Angular",
+"Desarrollo backend con Java11, JavaEE y Spring.",
+"Gestión de bases de datos con Oracle, MySQL, SQL Server y MongoDB.",
+"Metodología Scrum en el desarrollo de software.",
+"Manejo de Herramientas de diseño y multimedia, incluyendo Figma, Photoshop y Adobe Premiere.",
+"Planificación y ejecución de pruebas de aplicaciones con Postman y JMeter.",
+]
 
 
   getEmpresas() {
