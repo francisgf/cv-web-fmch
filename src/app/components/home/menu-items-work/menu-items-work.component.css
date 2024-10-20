@@ -16,6 +16,7 @@
 .ul-empresa li img {
   width: 25px;
   height: 25px;
+  border-radius: 5px;
 }
 
 .info-work {

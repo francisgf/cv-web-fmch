@@ -21,7 +21,7 @@ cursor: pointer;
 @media (max-width: 768px) {
 
   .info-work{
-    padding: 15px;
+    padding: 10px;
   }
   .ul-skills{
     height: 45px;

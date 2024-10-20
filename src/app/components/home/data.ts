@@ -63,18 +63,18 @@ export class Data {
 
   private detailDevWeb: String[] = [
     "Desarrollo web con HTML, CSS y JavaScript, JQuery, Angular",
-    "Desarrollo backend con Java11, JavaEE y Spring.",
-    "Desarrollo backend con Java11, JavaEE y Spring."
+    "Experiencia en el diseño, desarrollo e implementación de APIs RESTful utilizando tecnologías como Node.js (Express.js), Python (Flask, Django) o Java (Spring Boot).",
+    " Experiencia en el desarrollo de aplicaciones web basadas en arquitecturas de microservicios, incluyendo el diseño, desarrollo e implementación de servicios independientes y escalables."
   ]
 
   private detailDataBase: String[] = [
-    "Gestión de bases de datos con Oracle, MySQL, SQL Server y MongoDB.",
-
+    "Experiencia en la optimización de consultas SQL para mejorar el rendimiento de las bases de datos,utilizando técnicas como indexación, análisis de planes de ejecución y optimización de consultas complejas.",
+    "Experiencia en el diseño y ejecución de pruebas de carga y rendimiento utilizando herramientas como [herramienta específica (ej: JMeter, LoadRunner)]. He identificado y solucionado cuellos de botella en aplicaciones web, mejorando su capacidad de respuesta y escalabilidad. "
   ]
 
 
   private mySkills: any[] = [{ id:"DEVWEB",icon:"bi bi-terminal",name: "Desarrollo web", description: "Implementación de aplicaciones web fullstack", detail: this.detailDevWeb },
-                             { id:"DEVDB",icon:"bi bi-database",name: "Implementación BD", description: "Diseño e implementación de bases de datos SQL", detail: this.detailDataBase }
+                             { id:"DEVDB",icon:"bi bi-database",name: "Implementación BD", description: "Diseño e implementación de bases de datos SQL MSSQL, MySQl, MongoDB", detail: this.detailDataBase }
   ]
 
 
