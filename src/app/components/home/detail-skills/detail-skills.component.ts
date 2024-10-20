@@ -25,7 +25,7 @@ export class DetailSkillsComponent {
 
     this.objectDetail = {} as DataDetail;
 
-    this.subscription = this.serviceFlagActiveComponents.dataDetail$.subscribe(dataDetail => {
+    this.subscription = this.serviceFlagActiveComponents.dataDetailSkill$.subscribe(dataDetail => {
 
       this.object = JSON.parse(JSON.stringify(dataDetail));
       console.log("detail skills recibido", this.object);

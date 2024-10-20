@@ -1,3 +1,60 @@
-ul li{
+main {
   padding: 10px;
+  margin: 5px;
+}
+
+ul li {
+  font-size: 14px;
+  margin: 10px;
+}
+
+li::marker {
+  font-size: 20px;
+  color: rgb(52 91 148);
+}
+
+#btn-back {
+  display: flex;
+  justify-content: end;
+}
+
+#btn-back i {
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  background: #e4f0ff;
+  border-radius: 10px;
+
+}
+
+#title {
+  display: flex;
+  justify-content: start;
+  align-items: self-end;
+  margin-left: 50px;
+}
+
+#title img {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+
+  span h3 {
+    font-size: 14px;
+  }
+
+  ul li {
+    font-size: 12px;
+    margin: 10px;
+  }
+
+  #btn-back i {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+
 }

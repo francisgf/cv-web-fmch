@@ -1,5 +1,5 @@
-.ul-empresa{
-  background: #f7f7f7;
+.ul-empresa {
+  background: #f7f7f7e3;
   height: 45px;
   display: flex;
   align-items: center;
@@ -7,11 +7,13 @@
   border-radius: 5px;
 
 }
-.ul-empresa:hover{
-background-color: #f0f6ff;
-cursor: pointer;
+
+.ul-empresa:hover {
+  background-color: #f0f6ff;
+  cursor: pointer;
 }
-.ul-empresa li img{
+
+.ul-empresa li img {
   width: 25px;
   height: 25px;
 }
@@ -22,18 +24,37 @@ cursor: pointer;
 
 
 .info-work ul li {
-  font-size: 14px;
   list-style: none;
   display: inline-flex;
   margin: 5px 15px;
 }
 
-.info-work ul li i{
+.info-work ul li i {
   color: #27436e;
 }
+
 #container-detail-work {
   display: flex;
   align-items: first baseline;
   justify-content: flex-start;
   padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .ul-empresa {
+    font-size: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 15px;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .info-work ul li {
+    list-style: none;
+    display: inline-flex;
+    margin: 1px 8px;
+  }
 }

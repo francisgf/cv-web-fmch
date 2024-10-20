@@ -146,13 +146,13 @@
 
 .title-expiriens {
   padding: 10px 25px;
-  color: #ffffff;
+  color: #173140;
   font-size: 18px;
   font-weight: 400;
-  background-color: rgb(52 91 148);
   display: flex;
   align-items: center;
   border-radius: 10px 10px 0px 0px;
+  border-bottom:  1px solid #055d9c44;
 }
 
 #container-detail-work {
@@ -192,21 +192,8 @@
   font-size: 18px !important;
 }
 
-.ul-empresa{
-  background: #ebebeb;
-  height: 45px;
-  display: flex;
-justify-content: space-between;
-  align-items: center;
-  margin: 15px;
-  border-radius: 5px;
-  list-style: none;
-
-}
-.ul-empresa li{
 
 
-}
 .ul-empresa li img{
   width: 25px;
   height: 25px;
@@ -408,12 +395,12 @@ hr {
     margin-top: 45px;
   }
   #avatar-container {
-    width: 200px;
+    width: 120px;
     margin: 0px;
     padding: 0px;
   }
   #avatar-container img {
-    width: 110px;
+    width: 80px;
   }
   #social-container {
     display: none;
@@ -424,13 +411,13 @@ hr {
   }
 
   .info-work ul li {
-    font-size: 13px;
+    font-size: 10px;
     list-style: none;
-    margin: 5px 15px;
+    margin: 5px 5px;
   }
 
+
   .info-work ul li i {
-    font-size: 10px;
     margin: 0 3px;
     color: #27436e;
 
@@ -440,12 +427,12 @@ hr {
     font-size: 15px;
   }
   #name-datail #name {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
   }
 
   #name-datail #working {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   #detail-work-container {
@@ -458,7 +445,8 @@ hr {
   }
 
   .title-expiriens {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: bold;
   }
 
   #parrafo .icon-bag {

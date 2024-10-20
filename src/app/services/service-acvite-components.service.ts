@@ -17,6 +17,8 @@ export class ServiceAcviteComponentsService {
   private fragActiveComponentsSkills = new BehaviorSubject<boolean>(true);
   flagSkills$ = this.fragActiveComponentsSkills.asObservable();
 
+  private dataDetailComponentsSkills = new BehaviorSubject<object>([]);
+  dataDetailSkill$ = this.dataDetailComponentsSkills.asObservable();
 
 
   sendFlag(flag: boolean) {
@@ -29,7 +31,7 @@ export class ServiceAcviteComponentsService {
 
 
 
-  //enviar y obtener datos del objeto
+  //enviar y obtener datos del objeto work
   sendDetailObject(arrayObject: object[]) {
     this.dataDetailComponentsWorks.next(arrayObject);
   }
@@ -37,5 +39,15 @@ export class ServiceAcviteComponentsService {
   getDataObject() {
     console.log("tipoDato:", this.dataDetail$);
     return this.dataDetail$;
+  }
+
+    //enviar y obtener datos del objeto skill
+  sendDetailObjectSkill(arrayObject: object[]) {
+    this.dataDetailComponentsSkills.next(arrayObject);
+  }
+
+  getDataObjectSkill() {
+    console.log("tipoDato:", this.dataDetailSkill$);
+    return this.dataDetailSkill$;
   }
 }

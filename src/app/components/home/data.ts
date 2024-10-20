@@ -73,8 +73,8 @@ export class Data {
   ]
 
 
-  private mySkills: any[] = [{ id:"DEVWEB",name: "Desarrollo web", description: "Implementación de aplicaciones web fullstack", detail: this.detailDevWeb },
-                             { id:"DEVDB",name: "Implementación BD", description: "Diseño e implementación de bases de datos SQL", detail: this.detailDataBase }
+  private mySkills: any[] = [{ id:"DEVWEB",icon:"bi bi-terminal",name: "Desarrollo web", description: "Implementación de aplicaciones web fullstack", detail: this.detailDevWeb },
+                             { id:"DEVDB",icon:"bi bi-database",name: "Implementación BD", description: "Diseño e implementación de bases de datos SQL", detail: this.detailDataBase }
   ]
 
 

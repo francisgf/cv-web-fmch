@@ -9,19 +9,21 @@ ul li {
 }
 
 li::marker {
-  font-size: 30px; /* Ajusta el tamaño de la viñeta */
+  font-size: 20px; /* Ajusta el tamaño de la viñeta */
   color: rgb(52 91 148);      /* Cambia el color de la viñeta si lo deseas */
 }
 
-span {
+#btn-back {
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
 }
 
-span i {
+#btn-back i {
   padding: 10px;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
+  background: #e4f0ff;
+  border-radius: 10px;
 
 }
 
@@ -36,4 +38,15 @@ span i {
   width:25px;
   height:25px;
   padding: 5px;
+}
+
+@media (max-width: 768px) {
+  ul li{
+    font-size: 12px;
+  }
+
+  #btn-back i {
+    font-size: 10px;
+  }
+
 }

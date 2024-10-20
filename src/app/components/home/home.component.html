@@ -52,26 +52,7 @@
         <ng-template #detail_skillsRef>
           <app-detail-skills></app-detail-skills>
         </ng-template>
-
-        <!--<div class="info-work" [ngClass]="isSetOpacity ? 'setOpacity' : ''">
-          <div class="title-work">
-            <i class="bi bi-building"></i>
-            <p class="title"></p>
-          </div>
-          <p [innerHTML]="stSkills"></p>
-        </div>
-        -->
-        <div id="btns-container">
-          <button class="btn-next-back" *ngIf="isViewBtnPositive" (click)="changeItemExpiriens()">
-            <i class="bi bi-arrow-right-short"></i>
-          </button>
-          <button class="btn-next-back" *ngIf="isViewBtnNegative" (click)="changeItemExpiriensNegative()">
-            <i class="bi bi-arrow-left-short"></i>
-          </button>
-        </div>
       </div>
-
-
     </article>
     <article id="article-container">
       <h2 class="title-expiriens">

@@ -1,11 +1,13 @@
 <!--eslint-disable -->
 <main>
-  <span  alt=""><h3> {{objectDetail.name}} </h3></span>
-<ul>
+  <span alt="">
+    <h3> {{objectDetail.name}} </h3>
+  </span>
+  <ul>
 
-<li *ngFor=" let item of objectDetail.detail">
-  {{item}}
-</li>
-</ul>
-<span><i (click)="returnMenuSkills()" class="bi bi-arrow-left">Atrás</i></span></main>
-
+    <li *ngFor=" let item of objectDetail.detail">
+      {{item}}
+    </li>
+  </ul>
+  <span id="btn-back"><i (click)="returnMenuSkills()" class="bi bi-arrow-left">Regresar</i></span>
+</main>

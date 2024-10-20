@@ -3,7 +3,7 @@
 <div class="info-work">
   <ul *ngFor="let item of arraySkills" class="ul-skills" (click)="  sendFlagDetailSkills(); sendDataToDetail(item.id) ">
     <li>
-      <i class="bi bi-file-earmark-code-fill"></i>
+      <i class={{item.icon}}></i>
     <li>
       {{ item.description}}
     </li>
